@@ -2,13 +2,18 @@ import 'package:flutter/material.dart';
 
 class ProductSearchBar extends StatelessWidget {
   final double? width;
+  final double elevation;
 
-  const ProductSearchBar({Key? key, this.width}) : super(key: key);
+  const ProductSearchBar({
+    Key? key,
+    this.width,
+    this.elevation = 5.0,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Material(
-      elevation: 3.0,
+      elevation: elevation,
       borderRadius: BorderRadius.circular(20.0),
       child: Container(
         height: 40.0,

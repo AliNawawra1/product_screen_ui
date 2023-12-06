@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class AppBarActionsWidget extends StatelessWidget {
+class CustomMaterialButton extends StatelessWidget {
   final IconData icon;
   final double elevation;
 
-  const AppBarActionsWidget({
+  const CustomMaterialButton({
     Key? key,
     required this.icon,
     this.elevation = 5.0,

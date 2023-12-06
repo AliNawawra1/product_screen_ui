@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:product_screen_ui/screens/product_info_screen.dart';
 import 'package:product_screen_ui/widgets/home_screen_widgets/special_product/special_for_you_card.dart';
-import 'package:product_screen_ui/widgets/search_bar.dart';
+import 'package:product_screen_ui/widgets/product_search_bar.dart';
 
 class CategoryScreen extends StatelessWidget {
   const CategoryScreen({super.key});

@@ -9,7 +9,7 @@ class ProductInfoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: ProductInfoBody(),
       bottomNavigationBar: Padding(
         padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
@@ -50,8 +50,8 @@ class _ProductInfoBodyState extends State<ProductInfoBody> {
                   ],
                 ),
                 const Padding(
-                  padding: EdgeInsets.symmetric(
-                      horizontal: 8.0, vertical: 40.0),
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 8.0, vertical: 40.0),
                   child: Align(
                     alignment: Alignment.topLeft,
                     child: Icon(Icons.arrow_back_ios_new, color: Colors.white),

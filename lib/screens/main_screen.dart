@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:product_screen_ui/screens/categories_screen.dart';
 import 'package:product_screen_ui/screens/home_screen.dart';
+import 'package:product_screen_ui/screens/profile_screen.dart';
+import 'package:product_screen_ui/screens/search_screen.dart';
+import 'package:product_screen_ui/screens/wish_list_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -15,9 +18,9 @@ class _MainScreenState extends State<MainScreen> {
   static const List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
     CategoryScreen(),
-    Text('Search Page'),
-    Text('Favorites Page'),
-    Text('Profile Page'),
+    SearchScreen(),
+    WishListScreen(),
+    ProfileScreen(),
   ];
 
   void _onItemTapped(int index) {
