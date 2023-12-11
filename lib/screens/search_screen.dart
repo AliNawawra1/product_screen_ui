@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:product_screen_ui/widgets/app_bar_actions.dart';
-import 'package:product_screen_ui/widgets/custom_list_tile.dart';
-import 'package:product_screen_ui/widgets/product_search_bar.dart';
+import 'package:product_screen_ui/widgets/shared/custom_list_tile.dart';
+import 'package:product_screen_ui/widgets/shared/product_search_bar.dart';
 
 class SearchScreen extends StatelessWidget {
   final bool isWishList;

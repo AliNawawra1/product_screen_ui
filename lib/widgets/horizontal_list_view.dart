@@ -20,7 +20,7 @@ class HorizontalListView extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          CategoryTitleRow(title: title),
+          CustomTitleRow(title: title),
           SizedBox(
             height: height,
             child: ListView.builder(
