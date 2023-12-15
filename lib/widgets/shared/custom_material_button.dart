@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:product_screen_ui/enums/e_app_bar_actions.dart';
 import 'package:product_screen_ui/screens/cart_screen.dart';
-import 'package:product_screen_ui/screens/my_cards_screen.dart';
 import 'package:product_screen_ui/screens/notification_screen.dart';
 import 'package:product_screen_ui/widgets/app_bar_actions.dart';
 import 'package:product_screen_ui/widgets/shared/product_search_bar.dart';

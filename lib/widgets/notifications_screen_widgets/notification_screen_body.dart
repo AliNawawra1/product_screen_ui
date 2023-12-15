@@ -4,7 +4,7 @@ import 'package:product_screen_ui/widgets/notifications_screen_widgets/notificat
 import 'package:product_screen_ui/widgets/notifications_screen_widgets/notification_list_view_builder.dart';
 
 class NotificationsScreenBody extends StatelessWidget {
-  const NotificationsScreenBody({super.key});
+  const   NotificationsScreenBody({super.key});
 
   @override
   Widget build(BuildContext context) {
