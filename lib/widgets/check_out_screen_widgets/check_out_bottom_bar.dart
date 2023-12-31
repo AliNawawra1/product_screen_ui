@@ -33,10 +33,7 @@ class CheckOutBottomNavigationBar extends StatelessWidget {
                   ),
                   CustomButtonWidget(
                       buttonText: 'Pay Now',
-                      onPressed: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const PaymentScreen())),
+                      onPressed: () => navigateToPaymentScreen(context),
                       buttonHeight: 50.0,
                       buttonWidth: MediaQuery.of(context).size.width * 0.38),
                 ],
@@ -46,5 +43,10 @@ class CheckOutBottomNavigationBar extends StatelessWidget {
         ),
       ),
     ));
+  }
+
+  void navigateToPaymentScreen(BuildContext context) {
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => const PaymentScreen()));
   }
 }

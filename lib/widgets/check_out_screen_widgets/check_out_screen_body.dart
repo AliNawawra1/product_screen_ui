@@ -46,15 +46,9 @@ class CheckOutScreenBody extends StatelessWidget {
                 withoutTitle: true,
                 withoutSubtitle: true,
                 leading: CustomTextWidget(
-                  text: 'Flat Rate',
-                  color: Colors.grey,
-                  fontSize: 15.0,
-                ),
+                    text: 'Flat Rate', color: Colors.grey, fontSize: 15.0),
                 trailing: CustomTextWidget(
-                  text: '\$20.0',
-                  color: Colors.grey,
-                  fontSize: 15.0,
-                ),
+                    text: '\$20.0', color: Colors.grey, fontSize: 15.0),
               ),
             ),
             SizedBox(height: 8.0),

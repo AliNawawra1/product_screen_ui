@@ -1,24 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:product_screen_ui/screens/main_screen.dart';
+import 'package:product_screen_ui/helpers/dio_helper/dio_helper.dart';
+import 'package:product_screen_ui/helpers/shared_prefs_helper/shared_prefs_helper.dart';
+import 'package:product_screen_ui/screens/root_screen.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SharedHelper.init();
+  DioHelper.init();
+  runApp(const EcommerceApp());
 }
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'E-commerce Home Screen',
-      theme: ThemeData(
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-        primarySwatch: Colors.blue,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: const MainScreen(),
-    );
-  }
-}
-

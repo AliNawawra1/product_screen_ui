@@ -25,7 +25,7 @@ class CategoriesScreenBody extends StatelessWidget {
                   4,
                   (index) => InkWell(
                     onTap: () => navigateToInfo(context),
-                    child: const SpecialForYouCard(),
+                    child: SpecialForYouCard(index: index),
                   ),
                 )),
           ),

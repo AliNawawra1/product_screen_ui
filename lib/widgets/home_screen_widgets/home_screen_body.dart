@@ -10,7 +10,7 @@ class HomeScreenBody extends StatelessWidget {
     return const SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
+        children: [
           SpecialForYouView(title: 'Special for you'),
           FeaturedBestCategoriesView(title: 'Featured Products'),
           FeaturedBestCategoriesView(title: 'Best Selling Products'),

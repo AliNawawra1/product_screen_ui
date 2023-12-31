@@ -3,11 +3,15 @@ import 'package:flutter/material.dart';
 class ProductSearchBar extends StatelessWidget {
   final double? width;
   final double elevation;
+  final Function(String)? onSearchChanged;
+  final TextEditingController? searchController;
 
   const ProductSearchBar({
     Key? key,
     this.width,
     this.elevation = 5.0,
+    this.onSearchChanged,
+    this.searchController,
   }) : super(key: key);
 
   @override
@@ -21,6 +25,8 @@ class ProductSearchBar extends StatelessWidget {
         decoration: BoxDecoration(
             color: Colors.white, borderRadius: BorderRadius.circular(20.0)),
         child: TextField(
+          controller: searchController,
+          onChanged: onSearchChanged, // Add this line
           decoration: InputDecoration(
             fillColor: Colors.white,
             hintText: 'Search Product',

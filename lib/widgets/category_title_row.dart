@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:product_screen_ui/widgets/shared/custom_text_widget.dart';
 
 class CustomTitleRow extends StatelessWidget {
   final String title;
@@ -17,9 +18,8 @@ class CustomTitleRow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(title,
-            style:
-                const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500)),
+        CustomTextWidget(
+            text: title, fontSize: 18.0, fontWeight: FontWeight.w500),
         TextButton(
           onPressed: () {},
           child: Text(subTitle, style: const TextStyle(color: Colors.grey)),

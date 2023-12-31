@@ -6,7 +6,6 @@ class WishListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SearchScreen(
-        isWishList: true, title: 'Wish List', listViewCount: 5);
+    return const SearchScreen(isWishList: true, title: 'Wish List');
   }
 }
